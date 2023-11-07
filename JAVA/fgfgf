@@ -1,0 +1,84 @@
+Class LinkedList<E>{
+    Node<E> head;
+
+    Class Node<E>{
+        E data;
+        Node<E> next;
+
+        Create constructor Node(E data){
+            //Create Node with variable data
+            //Set the next to null
+        }
+    }
+
+    Function addFirst(E data){
+        //Generate new Node with given data
+        //Set the next of new Node to the original head
+        //Reset the head to point to the new Node
+    }
+
+    Function addLast(E data){
+        //Generate new Node with given data
+        If the head is null{
+            //Set the head to point to the new Node
+        }
+        //Generate a variable last to point to the head Node of the list
+        While the next of last Node is not null{
+            //Move to the next Node
+        }
+        //Set the next of last Node to point to the new Node
+    }
+
+    Function removeFirst(){
+        If the head is null{
+            //Return null
+        }
+        //Store the head Node in a variable called data
+        //Reset the head to the next of the original head
+        //Return data
+    }
+
+    Function removeLast(){
+        If the head is null{
+            //Return null
+        }
+        If the next of the head Node is null{
+            //Store the head Node in a variale called data
+            //Set the head to point to null
+            //Return data
+        }
+        //Generate a variable last to point to the head Node of the list
+        While the next of the next of the original Node is not null{
+            //Move to the next Node
+        }
+        //Store the next of the last Node in a variable called data
+        //Set the next of last Node to point to null
+        //Return data
+    }
+
+    Function getFirst(){
+        If the head is null{
+            //Return null
+        }
+        //Return the head Node of data
+    }
+
+    Function getLast(){
+        If the head is null{
+            //Return null
+        }
+        //Generate a variable last to point to the head Node of the list
+        While the next of the last Node is not null{
+            //Move to the next Node
+        }
+        //Return the last Node of the list
+    }
+
+    Function printList(){
+        //Generate a variable original to point to the head Node of the list
+        While original is not null{
+            //Print the data of the original Node to screen
+            //Move to the next Node
+        }
+    }
+}

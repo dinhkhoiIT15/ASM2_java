@@ -1,0 +1,68 @@
+if(isValid){
+    statement 1;
+    statement 2;
+}else{
+    statement 3;
+}
+
+==> T(n) = Math.max([t(statement 1) + t(statement 2)], [t(statement 3)]).
+
+
+statement 1;
+statement 2;
+...
+statement n;
+
+==> T(n) = t(statement 1) + t(statement 2) +...+ t(statement n).
+
+
+for(let i=0; i<array.length; i++){
+    statement 1;
+    statement 2;
+}
+
+Assuming n = array.length, we get the following:
+==> T(n) = n[t(statement 1) + t(statement 2)].
+
+
+for(let i=0; i<n; i++){
+    statement 1;
+    for(let j=0; j<m; j++){
+        statement 2;
+        statement 3;
+    }
+}
+
+==> T(n) = n[t(statement 1) + m[t(statement 2) + t(statement 3)]].
+
+
+for(let i=0; i<n; i++){
+    fn1();
+    for(let j=0; j<n; j++){
+        fn2();
+        for(let k=0; k<n; k++){
+            fn3();
+        }
+    }
+}
+
+==> T(n) = n[t(fn1()) + n[t(fn2()) + n[t(fn3())]]].
+
+
+
+long getOperationsCount(int n){
+    long counter = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            counter++;
+        }
+    }
+    return counter;
+}
+
+public static int sum(int n){
+    if(n == 1){
+        return 1;
+    }
+    return n + sum(n - 1);
+}

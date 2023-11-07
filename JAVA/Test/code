@@ -1,0 +1,6 @@
+Statement 1;
+Statement 2;
+....
+Statement n;
+
+==> T(n) = t(Statement 1) + t(Statement 2) +...+ t(Statement n).
